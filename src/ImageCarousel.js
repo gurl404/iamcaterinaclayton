@@ -4,12 +4,30 @@ import { Box, Paper, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
 function ImageCarousel({ images }) {
+  const slideInterval = 5000; 
+
   return (
     <Box sx={{ maxWidth: 800, flexGrow: 1, margin: 'auto', mt: 5 }}>
-      <Carousel>
+      <Carousel
+        animation="fade" 
+        navButtonsProps={{ style: { color: 'white', borderRadius: '50%', background: 'rgba(0, 0, 0, 0.5)' } }} 
+        indicatorContainerProps={{ sx: { display: 'none' } }} 
+        interval={slideInterval} 
+        sx={{
+          borderRadius: '20px', 
+          overflow: 'hidden',
+          position: 'relative',
+        }}
+      >
         {images.map((image, i) => (
           <Paper key={i} elevation={10}>
-            <Box sx={{ position: 'relative' }}>
+            <Box sx={{
+              position: 'relative',
+              borderRadius: '20px', 
+              overflow: 'hidden', 
+              backgroundImage: `url('background1.jpg')`, 
+              backgroundSize: 'cover', 
+            }}>
               <Box
                 component="img"
                 sx={{
