@@ -5,9 +5,9 @@ import { Container } from '@mui/material';
 
 const descriptionText = (
   <>
-    <p style={{ color: '#581de6', fontFamily: 'Verdana', fontSize: '22px' }}>
+    <h4 style={{ color: '#581de6', fontFamily: 'cursive', fontSize: '22px' }}>
       I'm Caterina Clayton - a creative soul who sings, models, and acts!
-    </p>
+    </h4>
     <Container sx={{ display: 'flex', justifyContent: 'space-evenly', mt: 2 }}>
     </Container>
   </>

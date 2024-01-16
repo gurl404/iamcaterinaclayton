@@ -82,7 +82,7 @@ const ActingPage = ({ description }) => {
         </Box>
 
         {/* Left Section (Content) */}
-        <Box sx={{ width: '70%' }}>  
+        <Box sx={{ width: '60%' }}>  
           {/* Resume Section */}
           {currentTab === 0 && (
             <ResumeBox
@@ -96,7 +96,7 @@ const ActingPage = ({ description }) => {
           {/* Acting Reel Section */}
           {currentTab === 1 && (
             <Box mt={3} textAlign="center">
-              <Box maxWidth="800px" margin="auto">
+              <Box margin="auto">
                 <iframe
                   title="Acting"
                   width="100%"
@@ -116,8 +116,8 @@ const ActingPage = ({ description }) => {
             src="AwardShowKG.jpg"
             alt="Girl in gown"
             style={{
-              width: '180%',
-              height: '100%',
+              width: '400px',
+              // height: '100%',
               borderRadius: '12px',
               boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
             }}

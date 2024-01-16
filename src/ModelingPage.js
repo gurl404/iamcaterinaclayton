@@ -28,7 +28,8 @@ const ModelingPage = ({description}) => {
 </> 
 
   return (
-    <Page description={descriptionText}>
+    <Page > 
+      description={descriptionText} 
       <ImageCarousel images={modelingPhotos} />
     </Page>
   );
