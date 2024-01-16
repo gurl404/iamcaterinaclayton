@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, Paper, Typography } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
-function ImageCarousel({ images }) {
+function ImageCarousel({ images, caption }) {
   const slideInterval = 5000; 
 
   return (
@@ -25,7 +25,7 @@ function ImageCarousel({ images }) {
               position: 'relative',
               borderRadius: '20px', 
               overflow: 'hidden', 
-              backgroundImage: `url('background1.jpg')`, 
+              backgroundImage: `url('purple-background.jpg')`, 
               backgroundSize: 'cover', 
             }}>
               <Box
@@ -51,7 +51,7 @@ function ImageCarousel({ images }) {
                   textAlign: 'center',
                 }}
               >
-                Photo by {image.credit}
+               {image.credit}
               </Typography>
             </Box>
           </Paper>

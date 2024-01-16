@@ -45,9 +45,9 @@ const ActingPage = ({ description }) => {
 
   const descriptionText = (
     <>
-      I am currently booking in St. Louis, but I am willing to travel.
-      I am COVID vaccinated, have a license, and an up-to-date passport.
-      Check out my IMDb profile{' '}
+    <p style ={{color:'#581de6', fontFamily: 'Verdana', fontSize: '18px'}}> I am currently booking in St. Louis, but I am willing to travel.
+      I am COVID vaccinated, have a license, and an up-to-date passport.</p>
+
       <a className="description-link" href="https://www.imdb.com/name/nm10686309/" target="_blank" rel="noopener noreferrer">
         here
       </a>
@@ -72,11 +72,12 @@ const ActingPage = ({ description }) => {
             variant="scrollable"
             value={currentTab}
             onChange={handleTabChange}
-            textColor="primary"
-            indicatorColor="primary"
+            textColor="#581de6"
+            indicatorColor="#581de6"
+            sx={{color:"#581de6",fontFamily:'Verdana'}} 
           >
-            <Tab label="Resume" />
-            <Tab label="Acting Reel" />
+            <Tab fontFamily='Verdana' label="Resume" />
+            <Tab fontFamily='Verdana' label="Acting Reel" />
           </Tabs>
         </Box>
 
